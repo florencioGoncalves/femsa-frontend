@@ -4,6 +4,11 @@
 /************************************
 ***         Tela de login         ***
 *************************************/
+    body#corpo-login{
+        display: grid;
+        grid-template-rows: max-content 1fr;
+    }
+
     header{
         height: 60px;
     }
@@ -16,19 +21,13 @@
 
     main{
         box-sizing: border-box;
-        padding: 50px;
-        height: 100%;
+        padding: 50px 30px;
     }
+
     section#lado-esquerdo{
         display: grid;
         grid-template-rows: max-content 1fr;
-    }
-    
-    section{
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        place-items: center center;
     }
 
     div#lado-direito{
@@ -36,7 +35,24 @@
     }
 
     form {
+        display: flex;
+        flex-direction: column;
         font-size: 11pt;
+        margin-top: 30px;
+    }
+
+    #corpo-login fieldset:not(#corpo-login fieldset:first-of-type){
+        margin-top: 20px;
+    }
+
+    #corpo-login fieldset input:not([type="checkbox"], [type="radio"]){
+        height: 25px;
+        line-height: 25px;
+        margin-top: 4px;
+    }
+
+    .botao-vermelho{
+        margin-top: auto;
     }
   }
   

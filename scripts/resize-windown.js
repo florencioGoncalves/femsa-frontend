@@ -1,3 +1,7 @@
+/******************************************************************
+ *  Seta os valores do body conforme o tamanho da tela do cliente *
+ ******************************************************************/
+
 document.querySelector("body").style.height =
   document.documentElement.clientHeight + "px";
 
