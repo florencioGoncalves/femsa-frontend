@@ -1,0 +1,58 @@
+/*Extra dispositivos pequenos(phones, 600px para baixo)*/
+@media only screen and (max-width: 600px){
+    
+/************************************
+***         Tela de login         ***
+*************************************/
+    header{
+        height: 60px;
+    }
+
+    header img{
+        object-fit: scale-down;
+        height: 70%;
+        margin: auto;
+    }
+
+    main{
+        box-sizing: border-box;
+        padding: 50px;
+        height: 100%;
+    }
+    section#lado-esquerdo{
+        display: grid;
+        grid-template-rows: max-content 1fr;
+    }
+    
+    section{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        place-items: center center;
+    }
+
+    div#lado-direito{
+        display: none;
+    }
+
+    form {
+        font-size: 11pt;
+    }
+  }
+  
+  /*Dispositivos pequenos(Tablets e telefones largos, min. 600px)*/
+  @media only screen and (min-width: 600px){
+  }
+  
+  /*Dispositivos médios(landscape tablets, 768px para cima)*/
+  @media only screen and (min-width: 768px){
+  }
+  
+  /*Dispositivos largos(laptops/desktops, 992px para cima)*/
+  @media only screen and (min-width: 992px){
+  }
+  
+  /*Extra dispositivos largos laptops e desktops de 1200px para cima*/
+  @media only screen and (min-width: 1200px){
+  }
+  
