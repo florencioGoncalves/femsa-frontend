@@ -46,9 +46,10 @@
   position: sticky;
   top: 0;
 }
-main{
+#corpo-login main{
   display: grid;
   width: 70%;
+  min-width: 860px !important;
   max-width: 900px;
   grid-template-columns: 1fr 40%;
   margin: auto;

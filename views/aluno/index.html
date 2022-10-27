@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alunos &mid; Home</title>
+    <link
+      rel="shortcut icon"
+      href="./../../assets/images/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./../../styles/reset.css" />
+    <link rel="stylesheet" href="./../../styles/style.css" />
+    <link rel="stylesheet" href="./../../styles/responsivo.css" />
+  </head>
+  <body id="corpo-documento">
+    <header id="cabecalho-padrao">
+      <img
+        src="./../../assets/images/logo-branca.svg"
+        alt="Coca-cola FEMSA logo"
+      />
+      <div class="cabecalho-conteudo-direita">
+        <button class="notificacoes">
+          <img
+            src="./../../assets/images/notificacoes.svg"
+            alt="notificacoes"
+          />
+        </button>
+        <figure>
+          <img src="" id="imagem-de-perfil" alt="Imagem-de-perfil" />
+          <div id="alt-imagem">
+            <img src="./../../assets/images/Ellipse 48.svg">
+            <img src="./../../assets/images/Intersect.png">
+          </div>
+          <figcaption>
+            <button><img src="./../../assets/images/seta-baixo.svg" alt="mais-opcoes" /></button>
+          </figcaption>
+        </figure>
+      </div>
+    </header>
+
+    <section id="conteudo-principal">
+      <nav id="barra-de-navegacao">
+        <ul>
+          <li id="pagina-selecionada"><img src="./../../assets/images/home-icon.svg"></li>
+          <li><img src="./../../assets/images/book-icon.svg"></li>
+          <li><img src="./../../assets/images/chat-icon.svg"></li>
+          <li><img src="./../../assets/images/complete-icon.svg"></li>
+          <li><img src="./../../assets/images/agenda-icon.svg"></li>
+        </ul>
+      </nav>
+      <main></main>
+    </section>
+
+    <script src="./../../scripts/resize-windown.js"></script>
+    <script>
+      const fotoPerfil = document.querySelector('#imagem-de-perfil')
+      if(fotoPerfil.getAttribute('src') == '')
+        fotoPerfil.style.display = 'none'
+      else
+      fotoPerfil.style.display = 'flex'
+
+    </script>
+  </body>
+</html>
