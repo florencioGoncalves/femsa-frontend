@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FEMSA &mid; Esqueci a senha</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/responsivo.css" />
+  </head>
+  <body id="corpo-login" class="corpo-recuperar-senha">
+    <header id="cabecalho-padrao">
+      <img src="./assets/images/logo-branca.svg" alt="Coca-cola FEMSA logo" />
+    </header>
+    <main>
+      <section id="lado-esquerdo">
+        <form action="">
+          <div class="cabecalho-login">
+            <h1>Esqueceu sua senha?</h1>
+            <span
+              >Para recuperar sua senha insira o seu email cadastrado e
+              enviaremos um código de confirmação</span
+            >
+          </div>
+
+          <fieldset>
+            <label for="email" class="label-texto">Email</label>
+            <input type="email" name="email" id="email" class="input-texto" />
+          </fieldset>
+
+          <button class="botao-vermelho" type="button">Entrar</button>
+        </form>
+      </section>
+      <div id="lado-direito">
+        <img
+          src="./assets/images/elementos-juntosplus 1.svg"
+          class="imagem-esquerda"
+        />
+        <img
+          src="./assets/images/Design-sem-nome-27.svg"
+          class="imagem-direita"
+        />
+      </div>
+    </main>
+
+
+    <dialog id="modal-codigo-enviado">
+      <div class="content">
+        <img src="./assets/images/coelho-branco.svg" alt="Coca-cola FEMSA">
+        <span>O código de recuperação foi enviado com sucesso</span>
+        <button class="botao-vermelho"><a href="./index.html">Voltar para tela inicial</a></button>
+      </div>
+    </dialog>
+
+    <script src="./scripts/resize-windown.js"></script>
+    <script>
+      const modalInfo = document.querySelector('#modal-codigo-enviado')
+
+      modalInfo.style.display = 'none'
+      document.querySelector('form .botao-vermelho').addEventListener('click', () => {
+        modalInfo.style.display = 'flex'
+        modalInfo.style.opacity = '0'
+        modalInfo.style.transition = 'all .1s'
+        setTimeout(() => modalInfo.style.opacity = '1', 100)
+      })
+    </script>
+  </body>
+</html>

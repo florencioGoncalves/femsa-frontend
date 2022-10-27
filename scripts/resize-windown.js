@@ -17,8 +17,8 @@ let addEvent = function (elem, type, eventHandle) {
 };
 
 addEvent(window, "resize", function () {
-  document.querySelector("body").style.height =
-    document.documentElement.clientHeight + "px";
-  document.querySelector("body").style.width =
-    document.documentElement.clientWidth + "px";
+  const corpo = document.querySelector("body")
+
+  corpo.style.height = document.documentElement.clientHeight + "px";
+  corpo.style.width = document.documentElement.clientWidth + "px";
 });
